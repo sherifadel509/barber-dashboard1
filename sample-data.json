@@ -1,0 +1,11 @@
+{
+  "salesTotal": 65000,
+  "purchasesTotal": 18000,
+  "netProfit": 47000,
+  "lowStockItems": [
+    { "item": "شفرات", "qty": 5 },
+    { "item": "فوط", "qty": 3 }
+  ]
+}
+
+

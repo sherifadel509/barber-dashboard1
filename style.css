@@ -1,0 +1,13 @@
+body { font-family: 'Cairo', sans-serif; background: #f4f6f9; margin: 0; padding: 0; }
+.header { background: #111; padding: 20px; color: #fff; text-align: center; font-size: 26px; font-weight: bold; }
+.container { width: 90%; margin: auto; margin-top: 30px; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 10px #ddd; text-align: center; transition: 0.3s; }
+.card:hover { box-shadow: 0 0 15px #aaa; transform: translateY(-2px); }
+.card h3 { margin: 0; font-size: 20px; }
+.card .value { font-size: 32px; font-weight: bold; margin-top: 10px; color: #007bff; }
+.chart-container { margin-top: 40px; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 10px #ddd; }
+.low-stock { margin-top: 40px; }
+.low-stock table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 0 10px #ddd; }
+th, td { padding: 12px; text-align: center; border-bottom: 1px solid #eee; }
+th { background: #222; color: #fff; }

@@ -4,26 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Barber Shop</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <style>
-        body { font-family: 'Cairo', sans-serif; background: #f4f6f9; margin: 0; padding: 0; }
-        .header { background: #111; padding: 20px; color: #fff; text-align: center; font-size: 26px; font-weight: bold; }
-        .container { width: 90%; margin: auto; margin-top: 30px; }
-        .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-        .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 10px #ddd; text-align: center; }
-        .card h3 { margin: 0; font-size: 20px; }
-        .card .value { font-size: 32px; font-weight: bold; margin-top: 10px; color: #007bff; }
-        .chart-container { margin-top: 40px; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 10px #ddd; }
-        .low-stock { margin-top: 40px; }
-        .low-stock table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 0 10px #ddd; }
-        th, td { padding: 12px; text-align: center; border-bottom: 1px solid #eee; }
-        th { background: #222; color: #fff; }
-    </style>
 </head>
-
 <body>
 
 <div class="header">لوحة تحكم صالون الحلاقة</div>
@@ -49,25 +32,6 @@
     </div>
 </div>
 
-<script>
-    let salesData = [1200, 1500, 900, 2100, 2600, 3000, 1800];
-    let lowStockItems = [{ item: "شفرات", qty: 5 }, { item: "فوط", qty: 3 }];
-
-    document.getElementById("salesTotal").innerHTML = "65000";
-    document.getElementById("purchasesTotal").innerHTML = "18000";
-    document.getElementById("netProfit").innerHTML = "47000";
-    document.getElementById("lowStockCount").innerHTML = lowStockItems.length;
-
-    let tableBody = document.getElementById("lowStockTable");
-    lowStockItems.forEach(row => tableBody.innerHTML += `<tr><td>${row.item}</td><td>${row.qty}</td></tr>`);
-
-    const ctx = document.getElementById('salesChart');
-    new Chart(ctx, {
-        type: 'line',
-        data: { labels: ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"], datasets: [{ label: 'Sales', data: salesData, borderWidth: 3 }] },
-        options: { responsive: true }
-    });
-</script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
